@@ -202,8 +202,45 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-
 	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+<!-- 
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.4.3</version>
+		</dependency>
+ -->
+
+		<dependency>
+			<groupId>org.openrdf.alibaba</groupId>
+			<artifactId>alibaba-repository-object</artifactId>
+			<version>${alibaba.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openrdf.sesame</groupId>
+			<artifactId>sesame-repository-sail</artifactId>
+			<version>${sesame.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openrdf.sesame</groupId>
+			<artifactId>sesame-sail-memory</artifactId>
+			<version>${sesame.version}</version>
+		</dependency>
+	</dependencies>
+	
+
 
 	<pluginRepositories>
 		<pluginRepository>
